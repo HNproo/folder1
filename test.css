@@ -1,0 +1,214 @@
+body{
+    background-image: url(sport.jpg);
+    background-size: cover;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title{
+    color: rgb(248, 0, 174);
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    display: inline-block;
+   transform: translateX(700px);
+    text-shadow: 10px 10px 10px black; 
+}
+.title::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 7px;
+    position: absolute;
+    background-color: black;
+    transition: width .5s ease-in-out;
+
+}
+.title:hover::before{
+    width: 100%;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    transform: translateY(200px);
+    
+}
+
+#home{
+    width: 200px;
+    height: 45px;
+    font-size: larger;
+
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    outline: none;
+    color: white;
+
+
+
+}
+
+#home::after{
+    content: "";
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(248, 0, 174);
+    border-radius: 8px;
+    
+    
+
+}
+#home::before{
+content: "";
+background: linear-gradient(
+    45deg, red,rgb(248, 0, 174),purple,red);
+    position:absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: 200px;
+    height: 48px;
+    filter: blur(8px);
+    animation: glowing 10s infinite ease-in-out;
+}
+@keyframes glowing{
+0%{background-position: 0 0;}
+50%{background-position: 400% 0;}
+100%{background-position: 0 0;}
+}
+#home:hover::after{
+    
+    background: transparent;
+    color: black;
+
+}
+#home:active:after{
+
+color: black;
+
+}
+#shop{
+    width: 200px;
+    height: 45px;
+    font-size: larger;
+    
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    outline: none;
+    color: white;
+    margin-left: 50px;
+
+
+
+}
+
+#shop::after{
+    content: "";
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(248, 0, 174);
+    border-radius: 8px;
+    
+    
+
+}
+#shop::before{
+content: "";
+background: linear-gradient(
+    45deg, red,rgb(248, 0, 174),purple,red);
+    position:absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: 200px;
+    height: 48px;
+    filter: blur(8px);
+    animation: glowing 10s infinite ease-in-out;}
+    #shop:hover::after{
+    
+        background: transparent;
+        color: black;
+    
+    }
+    #shop:active:after{
+    
+    color: black;
+    
+    }
+    #set{
+        width: 200px;
+        height: 45px;
+        font-size: larger;
+    
+        border-radius: 10px;
+        border: 3px solid black;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        outline: none;
+        color: white;
+        margin-left: 50px;
+    
+    
+    
+    }
+    
+    #set::after{
+        content: "";
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(248, 0, 174);
+        border-radius: 8px;
+        
+        
+    
+    }
+    #set::before{
+    content: "";
+    background: linear-gradient(
+        45deg, red,rgb(248, 0, 174),purple,red);
+        position:absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: 200px;
+        height: 48px;
+        filter: blur(8px);
+        animation: glowing 10s infinite ease-in-out;}
+        #set:hover::after{
+        
+            background: transparent;
+            color: black;
+        
+        }
+        #set:active:after{
+        
+        color: black;
+        
+        }
+       
